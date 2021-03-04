@@ -7,20 +7,21 @@
 
 import Foundation
 
-class Video: Codable {
+class Video: Decodable {
     
     let kind: String
     let items: [Item]
     
 }
 
-class Item: Codable {
+class Item: Decodable {
     
     let snippet: Snippet
+    var channel: Channel?
     
 }
 
-class Snippet: Codable {
+class Snippet: Decodable {
     
     let publishedAt: String
     let channelId: String
@@ -30,14 +31,14 @@ class Snippet: Codable {
     
 }
 
-class Thumbnail: Codable {
+class Thumbnail: Decodable {
     
     let medium: ThumbnailInfo
     let high: ThumbnailInfo
     
 }
 
-class ThumbnailInfo: Codable {
+class ThumbnailInfo: Decodable {
     
     let url: String
     let width: Int?
