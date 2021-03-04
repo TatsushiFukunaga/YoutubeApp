@@ -27,49 +27,25 @@ class ViewController: UIViewController {
     }
     
     func fetchYoutubeSearchInfo() {
-        
-        let urlString = "https://www.googleapis.com/youtube/v3/search?q=messi&key=AIzaSyB9QUjcXauoSNhnGUFU_RqEfzUU70Z87SU&part=snippet"
-        
-        let request = AF.request(urlString)
-        
-        request.responseJSON { (response) in
-            do {
-                guard let data = response.data else { return }
-                let decode = JSONDecoder()
-                let video = try decode.decode(Video.self, from: data)
-                self.videoItems = video.items
-                
-                let id = self.videoItems[0].snippet.channelId
-                self.fetchYoutubeChannelInfo(id: id)
-                
-            } catch {
-                print("変換に失敗しました。：", error)
-            }
+        let params = ["q": "messi"]
+
+        APIRequest.shared.request(path: .search, params: params, type: Video.self) { (video) in
+            self.videoItems = video.items
+            let id = self.videoItems[0].snippet.channelId
+            self.fetchYoutubeChannelInfo(id: id)
         }
-        
     }
     
     func fetchYoutubeChannelInfo(id: String) {
+        let params = ["id": id]
         
-        let urlString = "https://www.googleapis.com/youtube/v3/channels?&key=AIzaSyB9QUjcXauoSNhnGUFU_RqEfzUU70Z87SU&part=snippet&id=\(id)"
-        
-        let request = AF.request(urlString)
-        
-        request.responseJSON { (response) in
-            do {
-                guard let data = response.data else { return }
-                let decode = JSONDecoder()
-                let channel = try decode.decode(Channel.self, from: data)
-                self.videoItems.forEach { (item) in
-                    item.channel = channel
-                }
-                
-                self.videoListCollectionView.reloadData()
-            } catch {
-                print("変換に失敗しました。：", error)
+        APIRequest.shared.request(path: .channels, params: params, type: Channel.self) { (channel) in
+            self.videoItems.forEach { (item) in
+                item.channel = channel
             }
+            
+            self.videoListCollectionView.reloadData()
         }
-        
     }
 
 }
