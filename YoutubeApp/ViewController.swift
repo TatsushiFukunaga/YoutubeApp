@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     func fetchYoutubeSearchInfo() {
         let params = ["q": "messi"]
 
-        APIRequest.shared.request(path: .search, params: params, type: Video.self) { (video) in
+        API.shared.request(path: .search, params: params, type: Video.self) { (video) in
             self.videoItems = video.items
             let id = self.videoItems[0].snippet.channelId
             self.fetchYoutubeChannelInfo(id: id)
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     func fetchYoutubeChannelInfo(id: String) {
         let params = ["id": id]
         
-        APIRequest.shared.request(path: .channels, params: params, type: Channel.self) { (channel) in
+        API.shared.request(path: .channels, params: params, type: Channel.self) { (channel) in
             self.videoItems.forEach { (item) in
                 item.channel = channel
             }
