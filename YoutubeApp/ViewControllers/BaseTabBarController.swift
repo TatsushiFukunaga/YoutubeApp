@@ -9,26 +9,32 @@ import UIKit
 
 class BaseTabBarController: UITabBarController {
     
+    enum ControllerNsme: Int {
+        case home, search, channel, indox, library
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpViewControllers()
+    }
+    
+    private func setUpViewControllers() {
         viewControllers?.enumerated().forEach({ (index, viewController) in
-            
-            switch index {
-            case 0:
-                setTabBarInfo(viewController, selectedImageName: "home-icon-red", unselectedImageName: "home-icon-black", title: "ホーム")
-            case 1:
-                setTabBarInfo(viewController, selectedImageName: "search-icon-red", unselectedImageName: "search-icon-black", title: "検索")
-            case 2:
-                setTabBarInfo(viewController, selectedImageName: "channel-icon-red", unselectedImageName: "channel-icon-black", title: "登録チャンネル")
-            case 3:
-                setTabBarInfo(viewController, selectedImageName: "inbox-icon-red", unselectedImageName: "inbox-icon- black", title: "受信トレイ")
-            case 4:
-                setTabBarInfo(viewController, selectedImageName: "library-icon-red", unselectedImageName: "library-icon-black", title: "ライブラリ")
-            default:
-                break
+            if let name = ControllerNsme.init(rawValue: index) {
+                switch name {
+                case .home:
+                    setTabBarInfo(viewController, selectedImageName: "home-icon-red", unselectedImageName: "home-icon-black", title: "ホーム")
+                case .search:
+                    setTabBarInfo(viewController, selectedImageName: "search-icon-red", unselectedImageName: "search-icon-black", title: "検索")
+                case .channel:
+                    setTabBarInfo(viewController, selectedImageName: "channel-icon-red", unselectedImageName: "channel-icon-black", title: "登録チャンネル")
+                case .indox:
+                    setTabBarInfo(viewController, selectedImageName: "inbox-icon-red", unselectedImageName: "inbox-icon- black", title: "受信トレイ")
+                case .library:
+                    setTabBarInfo(viewController, selectedImageName: "library-icon-red", unselectedImageName: "library-icon-black", title: "ライブラリ")
+                }
             }
-            
         })
     }
     

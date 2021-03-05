@@ -85,10 +85,9 @@
 				432D149B25F0779D006F17E8 /* Xibs */,
 				432D149625F07610006F17E8 /* Cells */,
 				432D14BD25F1DD65006F17E8 /* ViewControllers */,
+				43C9827125F22E9400B3B266 /* StoryBoard */,
 				432D148125F071AF006F17E8 /* AppDelegate.swift */,
 				432D148325F071AF006F17E8 /* SceneDelegate.swift */,
-				432D14B525F1DB2F006F17E8 /* BaseTabBar.storyboard */,
-				432D148725F071AF006F17E8 /* Main.storyboard */,
 				432D148A25F071B9006F17E8 /* Assets.xcassets */,
 				432D148C25F071B9006F17E8 /* LaunchScreen.storyboard */,
 				432D148F25F071B9006F17E8 /* Info.plist */,
@@ -144,6 +143,15 @@
 				43C9826E25F2226000B3B266 /* UIImage-Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43C9827125F22E9400B3B266 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				432D14B525F1DB2F006F17E8 /* BaseTabBar.storyboard */,
+				432D148725F071AF006F17E8 /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		8A83B9B54438C7F9A39BD57C /* Pods */ = {
