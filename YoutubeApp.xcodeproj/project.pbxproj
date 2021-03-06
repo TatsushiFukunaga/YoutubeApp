@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		432D148225F071AF006F17E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D148125F071AF006F17E8 /* AppDelegate.swift */; };
 		432D148425F071AF006F17E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D148325F071AF006F17E8 /* SceneDelegate.swift */; };
-		432D148625F071AF006F17E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D148525F071AF006F17E8 /* ViewController.swift */; };
-		432D148925F071AF006F17E8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432D148725F071AF006F17E8 /* Home.storyboard */; };
+		432D148625F071AF006F17E8 /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D148525F071AF006F17E8 /* VideoListViewController.swift */; };
+		432D148925F071AF006F17E8 /* VideoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432D148725F071AF006F17E8 /* VideoList.storyboard */; };
 		432D148B25F071B9006F17E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432D148A25F071B9006F17E8 /* Assets.xcassets */; };
 		432D148E25F071B9006F17E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432D148C25F071B9006F17E8 /* LaunchScreen.storyboard */; };
 		432D149825F07632006F17E8 /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D149725F07632006F17E8 /* VideoListCell.swift */; };
@@ -28,6 +28,8 @@
 		43C9828425F33C8700B3B266 /* AttentionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9828325F33C8700B3B266 /* AttentionCell.swift */; };
 		43C9828725F34DCC00B3B266 /* AttentionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9828625F34DCC00B3B266 /* AttentionCollectionViewCell.swift */; };
 		43C9828A25F34E4B00B3B266 /* AttentionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C9828925F34E4B00B3B266 /* AttentionCollectionViewCell.xib */; };
+		43C9828D25F3670B00B3B266 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9828C25F3670B00B3B266 /* VideoViewController.swift */; };
+		43C9829125F3677100B3B266 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C9829025F3677100B3B266 /* Video.storyboard */; };
 		6E38331F91B3FBAD2AEFF849 /* Pods_YoutubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF769FC8C2D589577036DE9 /* Pods_YoutubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +37,8 @@
 		432D147E25F071AF006F17E8 /* YoutubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		432D148125F071AF006F17E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		432D148325F071AF006F17E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		432D148525F071AF006F17E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		432D148825F071AF006F17E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		432D148525F071AF006F17E8 /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
+		432D148825F071AF006F17E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VideoList.storyboard; sourceTree = "<group>"; };
 		432D148A25F071B9006F17E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		432D148D25F071B9006F17E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432D148F25F071B9006F17E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		43C9828325F33C8700B3B266 /* AttentionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentionCell.swift; sourceTree = "<group>"; };
 		43C9828625F34DCC00B3B266 /* AttentionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentionCollectionViewCell.swift; sourceTree = "<group>"; };
 		43C9828925F34E4B00B3B266 /* AttentionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttentionCollectionViewCell.xib; sourceTree = "<group>"; };
+		43C9828C25F3670B00B3B266 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		43C9829025F3677100B3B266 /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		54FC75EA9EC35E391D6AEAD7 /* Pods-YoutubeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.release.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F302EF1B0A0AAEFA12ADCC6 /* Pods-YoutubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF769FC8C2D589577036DE9 /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				432D14BA25F1DD42006F17E8 /* BaseTabBarController.swift */,
-				432D148525F071AF006F17E8 /* ViewController.swift */,
+				432D148525F071AF006F17E8 /* VideoListViewController.swift */,
+				43C9828C25F3670B00B3B266 /* VideoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,14 +170,23 @@
 		43C9827125F22E9400B3B266 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				43C9828F25F3674900B3B266 /* Tab */,
+				43C9829025F3677100B3B266 /* Video.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		43C9828F25F3674900B3B266 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
 				432D14B525F1DB2F006F17E8 /* BaseTabBar.storyboard */,
-				432D148725F071AF006F17E8 /* Home.storyboard */,
+				432D148725F071AF006F17E8 /* VideoList.storyboard */,
 				43C9827225F230F700B3B266 /* Search.storyboard */,
 				43C9827525F2312D00B3B266 /* Channel.storyboard */,
 				43C9827825F2319100B3B266 /* Inbox.storyboard */,
 				43C9827B25F231A400B3B266 /* Library.storyboard */,
 			);
-			path = StoryBoard;
+			path = Tab;
 			sourceTree = "<group>";
 		};
 		8A83B9B54438C7F9A39BD57C /* Pods */ = {
@@ -257,9 +271,10 @@
 				43C9828A25F34E4B00B3B266 /* AttentionCollectionViewCell.xib in Resources */,
 				432D148B25F071B9006F17E8 /* Assets.xcassets in Resources */,
 				43C9827C25F231A400B3B266 /* Library.storyboard in Resources */,
+				43C9829125F3677100B3B266 /* Video.storyboard in Resources */,
 				432D14B625F1DB2F006F17E8 /* BaseTabBar.storyboard in Resources */,
 				43C9827325F230F700B3B266 /* Search.storyboard in Resources */,
-				432D148925F071AF006F17E8 /* Home.storyboard in Resources */,
+				432D148925F071AF006F17E8 /* VideoList.storyboard in Resources */,
 				43C9827925F2319100B3B266 /* Inbox.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				432D14BB25F1DD42006F17E8 /* BaseTabBarController.swift in Sources */,
-				432D148625F071AF006F17E8 /* ViewController.swift in Sources */,
+				432D148625F071AF006F17E8 /* VideoListViewController.swift in Sources */,
+				43C9828D25F3670B00B3B266 /* VideoViewController.swift in Sources */,
 				43C9828725F34DCC00B3B266 /* AttentionCollectionViewCell.swift in Sources */,
 				432D14B025F0CD21006F17E8 /* API.swift in Sources */,
 				432D14AC25F0B464006F17E8 /* Channel.swift in Sources */,
@@ -330,12 +346,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		432D148725F071AF006F17E8 /* Home.storyboard */ = {
+		432D148725F071AF006F17E8 /* VideoList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				432D148825F071AF006F17E8 /* Base */,
 			);
-			name = Home.storyboard;
+			name = VideoList.storyboard;
 			sourceTree = "<group>";
 		};
 		432D148C25F071B9006F17E8 /* LaunchScreen.storyboard */ = {
