@@ -27,50 +27,50 @@
             </objects>
             <point key="canvasLocation" x="-1033" y="-219"/>
         </scene>
-        <!--Main-->
+        <!--Home-->
         <scene sceneID="rAa-VG-Heu">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="cvl-G9-FaI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="cvl-G9-FaI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="fSy-D7-cv6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7YX-4t-bW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-459" y="-362"/>
         </scene>
-        <!--Main-->
+        <!--Channel-->
         <scene sceneID="jWZ-b1-Xyn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="BgG-xX-qaO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Channel" id="BgG-xX-qaO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Wsh-Tx-BJX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDJ-RK-mHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-385" y="-220"/>
         </scene>
-        <!--Main-->
+        <!--Inbox-->
         <scene sceneID="r4H-UJ-pYp">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="hcE-Ah-tDF" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Inbox" id="hcE-Ah-tDF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="tig-no-4e7"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opy-Bu-mvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-385" y="-150"/>
         </scene>
-        <!--Main-->
+        <!--Search-->
         <scene sceneID="C4L-6V-jIl">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="Doz-Da-X4f" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Search" id="Doz-Da-X4f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="i19-Gy-Uy8"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="God-gw-otw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-385" y="-295"/>
         </scene>
-        <!--Main-->
+        <!--Library-->
         <scene sceneID="KBU-GY-X5T">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="oa1-rC-oYi" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Library" id="oa1-rC-oYi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7lf-1M-7j2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dy5-rf-uVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
