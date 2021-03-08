@@ -134,10 +134,11 @@ extension VideoListViewController {
 extension VideoListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("didSelectItemat")
-        
         let videoViewController = UIStoryboard(name: "Video", bundle: nil).instantiateViewController(identifier: "VideoViewController") as VideoViewController
-        videoViewController.modalPresentationStyle = .fullScreen
+        
+        //　参考演算子(if文)
+        videoViewController.selectedItem = indexPath.row > 2 ? videoItems[indexPath.row - 1] : videoItems[indexPath.row]
+        
         self.present(videoViewController, animated: true, completion: nil)
     }
     
