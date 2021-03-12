@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Video List View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="VideoListViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OFR-xn-EX8">
-                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rpr-DQ-5Xk">
                                     <size key="itemSize" width="128" height="128"/>
@@ -37,6 +37,25 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvt-3W-WR1">
+                                <rect key="frame" x="12" y="723" width="390" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="72D-Ki-JTs">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="inh-fw-EXo"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="72D-Ki-JTs" secondAttribute="bottom" id="0WI-xG-UFw"/>
+                                    <constraint firstItem="72D-Ki-JTs" firstAttribute="leading" secondItem="Vvt-3W-WR1" secondAttribute="leading" id="2a7-rX-ygZ"/>
+                                    <constraint firstItem="72D-Ki-JTs" firstAttribute="top" secondItem="Vvt-3W-WR1" secondAttribute="top" id="Gf2-7a-imX"/>
+                                    <constraint firstAttribute="height" constant="70" id="R4M-XW-8Le"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEk-xc-EeG">
                                 <rect key="frame" x="0.0" y="44" width="414" height="60"/>
                                 <subviews>
@@ -96,16 +115,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vvt-3W-WR1" secondAttribute="bottom" constant="20" id="4a9-Na-YFo"/>
                             <constraint firstItem="OFR-xn-EX8" firstAttribute="top" secondItem="rEk-xc-EeG" secondAttribute="bottom" id="8e7-pC-vHU"/>
                             <constraint firstItem="rEk-xc-EeG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CQP-EY-EKz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vvt-3W-WR1" secondAttribute="trailing" constant="12" id="LWd-Na-EDl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OFR-xn-EX8" secondAttribute="trailing" id="StP-zb-W7l"/>
                             <constraint firstItem="rEk-xc-EeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y7h-NR-uSz"/>
+                            <constraint firstItem="Vvt-3W-WR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="e5o-TA-gAh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OFR-xn-EX8" secondAttribute="bottom" id="tyQ-eu-SaI"/>
                             <constraint firstItem="OFR-xn-EX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yNi-ec-4k3"/>
                             <constraint firstItem="rEk-xc-EeG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yRO-Jm-gzU"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="w3f-SI-Gvx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="bottomVideoImageView" destination="72D-Ki-JTs" id="vVT-F5-aio"/>
+                        <outlet property="bottomVideoView" destination="Vvt-3W-WR1" id="xJq-hz-KuO"/>
                         <outlet property="headerHeightConstraint" destination="sbs-x9-8Z0" id="h6k-Zk-tmI"/>
                         <outlet property="headerTopConstraint" destination="CQP-EY-EKz" id="xqs-yD-f8w"/>
                         <outlet property="headerView" destination="rEk-xc-EeG" id="N0a-de-64D"/>
@@ -123,6 +149,9 @@
         <image name="cat" width="2121" height="1414"/>
         <image name="search_106530" width="512" height="512"/>
         <image name="video-camera_icon-icons.com_53843" width="512" height="512"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
