@@ -45,12 +45,12 @@
                                         <color key="backgroundColor" systemColor="linkColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="inh-fw-EXo"/>
+                                            <constraint firstAttribute="height" constant="70" id="jzv-eJ-uc9"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="72D-Ki-JTs" secondAttribute="bottom" id="0WI-xG-UFw"/>
                                     <constraint firstItem="72D-Ki-JTs" firstAttribute="leading" secondItem="Vvt-3W-WR1" secondAttribute="leading" id="2a7-rX-ygZ"/>
                                     <constraint firstItem="72D-Ki-JTs" firstAttribute="top" secondItem="Vvt-3W-WR1" secondAttribute="top" id="Gf2-7a-imX"/>
                                     <constraint firstAttribute="height" constant="70" id="R4M-XW-8Le"/>
@@ -105,6 +105,7 @@
                                     <constraint firstItem="vJQ-hw-CNT" firstAttribute="leading" secondItem="jwq-mU-Dnm" secondAttribute="trailing" constant="3" id="N8Q-Nh-8cA"/>
                                     <constraint firstItem="jwq-mU-Dnm" firstAttribute="centerY" secondItem="rEk-xc-EeG" secondAttribute="centerY" id="Pc9-Z2-Rv3"/>
                                     <constraint firstAttribute="trailing" secondItem="fUO-2d-EmI" secondAttribute="trailing" constant="10" id="S8h-Dk-Ttx"/>
+                                    <constraint firstItem="jwq-mU-Dnm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4qc-xc-o1R" secondAttribute="trailing" constant="8" symbolic="YES" id="Sxr-Oh-Dbz"/>
                                     <constraint firstItem="aCo-zF-TMH" firstAttribute="centerY" secondItem="rEk-xc-EeG" secondAttribute="centerY" id="TIw-bT-Irb"/>
                                     <constraint firstAttribute="height" constant="60" id="sbs-x9-8Z0"/>
                                     <constraint firstItem="fUO-2d-EmI" firstAttribute="leading" secondItem="vJQ-hw-CNT" secondAttribute="trailing" constant="3" id="vbW-cK-DkC"/>
@@ -130,8 +131,14 @@
                     <tabBarItem key="tabBarItem" title="Item" id="w3f-SI-Gvx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="bottomVideoImageHeight" destination="jzv-eJ-uc9" id="AqF-n0-Np9"/>
                         <outlet property="bottomVideoImageView" destination="72D-Ki-JTs" id="vVT-F5-aio"/>
+                        <outlet property="bottomVideoImageWidth" destination="inh-fw-EXo" id="jEF-WM-btN"/>
                         <outlet property="bottomVideoView" destination="Vvt-3W-WR1" id="xJq-hz-KuO"/>
+                        <outlet property="bottomVideoViewBottom" destination="4a9-Na-YFo" id="o9s-Ql-eqt"/>
+                        <outlet property="bottomVideoViewHeight" destination="R4M-XW-8Le" id="zFv-K9-0PO"/>
+                        <outlet property="bottomVideoViewLeading" destination="e5o-TA-gAh" id="f0D-iy-7CI"/>
+                        <outlet property="bottomVideoViewTrailing" destination="LWd-Na-EDl" id="wBh-xF-NWz"/>
                         <outlet property="headerHeightConstraint" destination="sbs-x9-8Z0" id="h6k-Zk-tmI"/>
                         <outlet property="headerTopConstraint" destination="CQP-EY-EKz" id="xqs-yD-f8w"/>
                         <outlet property="headerView" destination="rEk-xc-EeG" id="N0a-de-64D"/>
