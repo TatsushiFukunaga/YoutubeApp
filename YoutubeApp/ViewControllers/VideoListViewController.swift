@@ -48,7 +48,7 @@ class VideoListViewController: UIViewController {
         super.viewDidLoad()
         
         setupViews()
-        fetchYoutubeSearchInfo()
+//        fetchYoutubeSearchInfo()
         setupGestureRecognizer()
         NotificationCenter.default.addObserver(self, selector: #selector(showThumbnailImage), name: .init("thumbnailImage"), object: nil)
     }
