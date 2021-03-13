@@ -17,7 +17,7 @@ class VideoListViewController: UIViewController {
     private let cellId = "cellId"
     private let attentionCellId = "attentionCellId"
     private var videoItems = [Item]()
-    private var selectedItem: Item?
+    var selectedItem: Item?
     
     // MARK: IBOutlets
     @IBOutlet weak var videoListCollectionView: UICollectionView!
@@ -48,9 +48,10 @@ class VideoListViewController: UIViewController {
         super.viewDidLoad()
         
         setupViews()
-//        fetchYoutubeSearchInfo()
+        //        fetchYoutubeSearchInfo()
         setupGestureRecognizer()
-        NotificationCenter.default.addObserver(self, selector: #selector(showThumbnailImage), name: .init("thumbnailImage"), object: nil)
+        setupNotifications()
+        
     }
     
     // MARK: Methods
@@ -69,6 +70,20 @@ class VideoListViewController: UIViewController {
         bottomVideoTitleLabel.text = self.selectedItem?.snippet.title
         bottomVideoDescribeLabel.text = self.selectedItem?.snippet.description
         
+    }
+    
+    private func setupNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(showThumbnailImage), name: .init("thumbnailImage"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showSearchedItem), name: .init("searchedItem"), object: nil)
+    }
+    
+    @objc private func showSearchedItem() {
+        let videoViewController = UIStoryboard(name: "Video", bundle: nil).instantiateViewController(identifier: "VideoViewController") as VideoViewController
+        
+        videoViewController.selectedItem = self.selectedItem
+        
+        bottomVideoView.isHidden = true
+        self.present(videoViewController, animated: true, completion: nil)
     }
     
     private func setupViews() {
