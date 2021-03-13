@@ -30,6 +30,7 @@
 		43C9828A25F34E4B00B3B266 /* AttentionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C9828925F34E4B00B3B266 /* AttentionCollectionViewCell.xib */; };
 		43C9828D25F3670B00B3B266 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9828C25F3670B00B3B266 /* VideoViewController.swift */; };
 		43C9829125F3677100B3B266 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C9829025F3677100B3B266 /* Video.storyboard */; };
+		43EEF13425FC85980051660D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEF13325FC85980051660D /* SearchViewController.swift */; };
 		6E38331F91B3FBAD2AEFF849 /* Pods_YoutubeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF769FC8C2D589577036DE9 /* Pods_YoutubeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		43C9828925F34E4B00B3B266 /* AttentionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttentionCollectionViewCell.xib; sourceTree = "<group>"; };
 		43C9828C25F3670B00B3B266 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		43C9829025F3677100B3B266 /* Video.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
+		43EEF13325FC85980051660D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		54FC75EA9EC35E391D6AEAD7 /* Pods-YoutubeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.release.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.release.xcconfig"; sourceTree = "<group>"; };
 		9F302EF1B0A0AAEFA12ADCC6 /* Pods-YoutubeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeApp.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeApp/Pods-YoutubeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF769FC8C2D589577036DE9 /* Pods_YoutubeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				432D14BA25F1DD42006F17E8 /* BaseTabBarController.swift */,
 				432D148525F071AF006F17E8 /* VideoListViewController.swift */,
 				43C9828C25F3670B00B3B266 /* VideoViewController.swift */,
+				43EEF13325FC85980051660D /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				432D14AC25F0B464006F17E8 /* Channel.swift in Sources */,
 				43C9828425F33C8700B3B266 /* AttentionCell.swift in Sources */,
 				43C9826F25F2226000B3B266 /* UIImage-Extension.swift in Sources */,
+				43EEF13425FC85980051660D /* SearchViewController.swift in Sources */,
 				432D149825F07632006F17E8 /* VideoListCell.swift in Sources */,
 				432D148225F071AF006F17E8 /* AppDelegate.swift in Sources */,
 				432D148425F071AF006F17E8 /* SceneDelegate.swift in Sources */,
